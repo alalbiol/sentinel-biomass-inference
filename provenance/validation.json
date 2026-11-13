@@ -1,0 +1,175 @@
+{
+  "release": "v1.0.0",
+  "date": "2026-11-13",
+  "cuda": {
+    "device": "NVIDIA GeForce RTX 3060",
+    "torch": "2.10.0+cu128",
+    "rtol": 0.001,
+    "atol_Mg_ha": 0.1,
+    "comparisons": [
+      {
+        "model": "convnextv2_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.1240692138671875,
+        "mean_Mg_ha": 74.60513305664062,
+        "status": "passed"
+      },
+      {
+        "model": "convnextv2_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.09497833251953125,
+        "mean_Mg_ha": 103.21859741210938,
+        "status": "passed"
+      },
+      {
+        "model": "convnextv2_late",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.025177001953125,
+        "mean_Mg_ha": 73.55973815917969,
+        "status": "passed"
+      },
+      {
+        "model": "convnextv2_late",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.02783203125,
+        "mean_Mg_ha": 110.03868103027344,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnet_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.0526885986328125,
+        "mean_Mg_ha": 64.82154846191406,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnet_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.071929931640625,
+        "mean_Mg_ha": 90.2202377319336,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnet_late",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.0175018310546875,
+        "mean_Mg_ha": 68.50257110595703,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnet_late",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.019500732421875,
+        "mean_Mg_ha": 82.40260314941406,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnetv2_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.0429534912109375,
+        "mean_Mg_ha": 62.155277252197266,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnetv2_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.0740966796875,
+        "mean_Mg_ha": 99.35897827148438,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnetv2_late",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.01613616943359375,
+        "mean_Mg_ha": 71.96038818359375,
+        "status": "passed"
+      },
+      {
+        "model": "efficientnetv2_late",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.024322509765625,
+        "mean_Mg_ha": 117.1569595336914,
+        "status": "passed"
+      },
+      {
+        "model": "mobilenetv4_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.105682373046875,
+        "mean_Mg_ha": 66.95716857910156,
+        "status": "passed"
+      },
+      {
+        "model": "mobilenetv4_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.137054443359375,
+        "mean_Mg_ha": 96.64485931396484,
+        "status": "passed"
+      },
+      {
+        "model": "mobilenetv4_late",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.0404510498046875,
+        "mean_Mg_ha": 58.7844352722168,
+        "status": "passed"
+      },
+      {
+        "model": "mobilenetv4_late",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.07201385498046875,
+        "mean_Mg_ha": 81.21890258789062,
+        "status": "passed"
+      },
+      {
+        "model": "resnetrs101_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.04833984375,
+        "mean_Mg_ha": 72.7494888305664,
+        "status": "passed"
+      },
+      {
+        "model": "resnetrs101_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.071380615234375,
+        "mean_Mg_ha": 98.4908447265625,
+        "status": "passed"
+      },
+      {
+        "model": "resnetrs101_late",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.01812744140625,
+        "mean_Mg_ha": 68.5236587524414,
+        "status": "passed"
+      },
+      {
+        "model": "resnetrs101_late",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.0206451416015625,
+        "mean_Mg_ha": 95.28672790527344,
+        "status": "passed"
+      }
+    ]
+  },
+  "cpu": {
+    "rtol": 0.001,
+    "atol_Mg_ha": 0.25,
+    "comparisons": [
+      {
+        "model": "mobilenetv4_early",
+        "chip_id": "ES_2021_42p9492_W3p2578",
+        "max_absolute_difference_Mg_ha": 0.1429901123046875,
+        "mean_Mg_ha": 66.9566879272461,
+        "status": "passed"
+      },
+      {
+        "model": "mobilenetv4_early",
+        "chip_id": "ES_2021_42p1081_1p7344",
+        "max_absolute_difference_Mg_ha": 0.22110748291015625,
+        "mean_Mg_ha": 96.64179229736328,
+        "status": "passed"
+      }
+    ]
+  },
+  "tests": "Five input-contract tests; see tests/test_inputs.py",
+  "gee": "Live one-month downloads passed for both biomassters-style and spain-evaluation recipes; full twelve-month live download not run.",
+  "sample_values": "Decoded samples checked exactly before and after lossless GeoTIFF recompression."
+}

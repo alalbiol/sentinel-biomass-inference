@@ -1,0 +1,9 @@
+{
+  "source_repository": "https://github.com/alalbiol/AI4DIS",
+  "source_commit": "fa9497af0ab32ad796e2bc038574d9bc23c340a3",
+  "architecture_source": "use_case_1/models.py",
+  "architecture_sha256": "1bed087ac4b1ff0ef4fe758b154be896399f276600827e07ef8a2f1bfd173d1a",
+  "preprocessing_source": "use_case_1/dataset.py read_imgs(norm=False)",
+  "input_specification_source": "https://huggingface.co/datasets/nascetti-a/BioMassters",
+  "notes": "Inference wrapper removed training dependencies. Model architecture copied unchanged; state_dict tensors exported without optimizer/trainer state."
+}

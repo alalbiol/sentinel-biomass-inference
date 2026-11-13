@@ -1,0 +1,86 @@
+{
+  "release": "v1.0.0",
+  "format": "safetensors",
+  "models": [
+    {
+      "model_id": "convnextv2_early",
+      "source_filename": "convnextv2_early.ckpt",
+      "source_sha256": "475c81c91a9b7087e1295965a547b05c07ef8cd2092c9544b8f9b5f96f9e8a8a",
+      "filename": "convnextv2_early.safetensors",
+      "sha256": "005fda71eb82fced81ed9b08285eee98adbafe2225deb1912ee506bd6d787730",
+      "bytes": 376841908
+    },
+    {
+      "model_id": "convnextv2_late",
+      "source_filename": "convnextv2_late.ckpt",
+      "source_sha256": "b5b34e8a8f8df33bbbdcc3a7f94544f0bc8e67f98c98a13c040c69f8481f51fe",
+      "filename": "convnextv2_late.safetensors",
+      "sha256": "4b1f6cb82da9e877364d84e3fbb83b307eb5293e339ae96ee56d72a5c1bc3715",
+      "bytes": 376841908
+    },
+    {
+      "model_id": "efficientnet_early",
+      "source_filename": "efficientnet_early.ckpt",
+      "source_sha256": "70440470c2a79d75b2feb51787ce42c16b912f3b0ca15712d6fe97749acdff6d",
+      "filename": "efficientnet_early.safetensors",
+      "sha256": "65b8900c1d7761647242b8241db7d37a5138ca12238b3aa73d3abab3c950cdbb",
+      "bytes": 124765896
+    },
+    {
+      "model_id": "efficientnet_late",
+      "source_filename": "efficientnet_late.ckpt",
+      "source_sha256": "f9b40474b281d762dd373c21afb314fda3c5438b246d21ce744aec271e7cc9c4",
+      "filename": "efficientnet_late.safetensors",
+      "sha256": "f226820bfa94528efb94f905c3367d7600312e8cb155be3c582e15893769b57a",
+      "bytes": 124765888
+    },
+    {
+      "model_id": "efficientnetv2_early",
+      "source_filename": "efficientnetv2_early.ckpt",
+      "source_sha256": "ec2f7480f6fdcb57ba2470cd1ea5fdd5a3bfd5168cddeb4a5ce1c28a290b0387",
+      "filename": "efficientnetv2_early.safetensors",
+      "sha256": "a2a98f4c44328a2670831b656aafd1461e50729ba11417a889cf316278ed28f2",
+      "bytes": 225059576
+    },
+    {
+      "model_id": "efficientnetv2_late",
+      "source_filename": "efficientnetv2_late.ckpt",
+      "source_sha256": "565721df63afd34696944fcd0d1ab554f814eb34673bc46db775bad22ee4b5bd",
+      "filename": "efficientnetv2_late.safetensors",
+      "sha256": "2aa717d1f6a8cfb79234aa175a46e08b088bb0032df79ca17748ed050d6ab5cd",
+      "bytes": 225059576
+    },
+    {
+      "model_id": "mobilenetv4_early",
+      "source_filename": "mobilenetv4_early.ckpt",
+      "source_sha256": "42de2355a7c6bda52eabaa5285eb5bd70f3770c8d06c9aa752beaa262ad17e5a",
+      "filename": "mobilenetv4_early.safetensors",
+      "sha256": "4a76641dd997a27608b08905d9c60fa0e2479f7059930994c504c670fe2ce41c",
+      "bytes": 48560592
+    },
+    {
+      "model_id": "mobilenetv4_late",
+      "source_filename": "mobilenetv4_late.ckpt",
+      "source_sha256": "909d1fb47a71934cb9f7b356bf74499ff844cb56483bfd8132966a7a95d115fb",
+      "filename": "mobilenetv4_late.safetensors",
+      "sha256": "d4124ae963115f83e158665b438cf73c1c3db7df61015856a986810f031ada49",
+      "bytes": 48560584
+    },
+    {
+      "model_id": "resnetrs101_early",
+      "source_filename": "resnetrs101_early.ckpt",
+      "source_sha256": "98e15ab1ef46dd3b8775385d256c92c2230883610554a8a0fce61e0901836437",
+      "filename": "resnetrs101_early.safetensors",
+      "sha256": "4f5be52e489be055b36538a7f605d9aa8f7e3cb29ccb123fc6c2076a6dd64534",
+      "bytes": 308413232
+    },
+    {
+      "model_id": "resnetrs101_late",
+      "source_filename": "resnetrs101_late.ckpt",
+      "source_sha256": "c40f9e9fa8692809bf9bfd12266f3c9c28fc15c7954cbefe3d39a1f243ce48b6",
+      "filename": "resnetrs101_late.safetensors",
+      "sha256": "f14d7ee6aa25c9f6050f84db039eccc7f57cdb006ac13ebba85e9a0db5e8e262",
+      "bytes": 308413224
+    }
+  ]
+}

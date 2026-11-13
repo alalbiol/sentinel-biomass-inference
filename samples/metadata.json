@@ -1,0 +1,22 @@
+[
+  {
+    "chip_id": "ES_2021_42p9492_W3p2578",
+    "lon": -3.257759715085289,
+    "lat": 42.94915520601484,
+    "forest_type": "mixed",
+    "start_date": "2021-01-01",
+    "end_date_exclusive": "2022-01-01",
+    "missing_s2_months": [],
+    "source": "AI4DIS Spain validation_bm; modified Copernicus Sentinel data (2021); no ground-truth labels included"
+  },
+  {
+    "chip_id": "ES_2021_42p1081_1p7344",
+    "lon": 1.7344121539962842,
+    "lat": 42.10812993878521,
+    "forest_type": "coniferous",
+    "start_date": "2021-01-01",
+    "end_date_exclusive": "2022-01-01",
+    "missing_s2_months": [],
+    "source": "AI4DIS Spain validation_bm; modified Copernicus Sentinel data (2021); no ground-truth labels included"
+  }
+]

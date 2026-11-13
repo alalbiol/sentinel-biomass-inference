@@ -1,0 +1,14 @@
+{
+  "python": "3.11.15",
+  "dependencies": {
+    "torch": "2.10.0",
+    "torchvision": "0.25.0",
+    "timm": "1.0.25",
+    "segmentation-models-pytorch": "0.5.0",
+    "numpy": "2.4.6",
+    "rasterio": "1.4.4",
+    "safetensors": "0.7.0",
+    "pyproj": "3.7.2",
+    "earthengine-api": "1.7.29"
+  }
+}

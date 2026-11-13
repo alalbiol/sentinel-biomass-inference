@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+checkpoints/
+dist/
+outputs/
+downloads/
+*.ckpt
+*.safetensors
+*.part
