@@ -13,8 +13,7 @@ source: https://github.com/alalbiol/sentinel-biomass-inference/tree/v1.0.0
 
 Estimate aboveground dry biomass from a year of Sentinel-1 and Sentinel-2 images using the Finland-trained AI4DIS models. Outputs are single-band biomass maps in **Mg/ha**, at a 10 m grid spacing.
 
-**Release:** [GitHub v1.0.0](https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.0.0).
-**EOTDL model snapshot:** prepared for upload as `sentinel-biomass-inference`; the [intended model page](https://www.eotdl.com/models/sentinel-biomass-inference) will become available after publication. Its EOTDL version number has not yet been assigned.
+**Released asset:** [GitHub v1.0.0](https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.0.0) corresponds to **[EOTDL model version 1](https://www.eotdl.com/models/sentinel-biomass-inference)**. The exact source commit is `fa746faefbf6fa9a26339b3fa28c2b8fa7b56752`. All 105 uploaded payload files were verified against this commit. See [the release record](provenance/releases/v1.0.0.json) for the model ID and manifest checksum.
 
 GitHub contains the inference code and two real example patches. The EOTDL snapshot additionally contains all ten checkpoints, with the exact same code and examples. This release estimates standing biomass; it does not forecast future growth or convert biomass into carbon credits.
 
@@ -30,7 +29,7 @@ python -m pip install torch==2.10.0 torchvision==0.25.0 --index-url https://down
 python -m pip install -r requirements.txt
 ```
 
-Download the complete EOTDL snapshot once it is published, or obtain its `checkpoints/` folder and place it at the repository root. Checkpoints are not stored in Git. `provenance/checkpoints.json` records their names, sizes, and hashes.
+Download the complete EOTDL snapshot, or obtain its `checkpoints/` folder and place it at the repository root. Checkpoints are not stored in Git. `provenance/checkpoints.json` records their names, sizes, and hashes.
 
 ```bash
 python scripts/verify_checkpoints.py

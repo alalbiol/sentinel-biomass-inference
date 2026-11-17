@@ -1,0 +1,14 @@
+{
+  "model_name": "sentinel-biomass-inference",
+  "model_id": "6af713a1dbc0af5e134f7df9",
+  "eotdl_version": 1,
+  "github_commit": "fa746faefbf6fa9a26339b3fa28c2b8fa7b56752",
+  "github_tag": "v1.0.0",
+  "manifest_sha256": "9eb1a583a6059942ed088bcd7ec2a2e8f8a6abe00a241aec3f11ca72d50773c4",
+  "payload_files": 105,
+  "github_release_url": "https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.0.0",
+  "eotdl_url": "https://www.eotdl.com/models/sentinel-biomass-inference",
+  "uploaded": "2026-11-13",
+  "verified_date": "2026-11-17",
+  "verification": "EOTDL catalog SHA-1 of every uploaded file matched the snapshot built from github_commit; the uploaded release-manifest.json is byte-identical"
+}

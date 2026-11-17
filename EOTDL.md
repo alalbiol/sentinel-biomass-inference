@@ -3,11 +3,9 @@
 This package is an EOTDL **model entry** named `sentinel-biomass-inference`.
 The root README has EOTDL metadata. Code and model weights use MIT; sample imagery retains Copernicus terms. All four authors are listed in README.md.
 
-## GitHub and EOTDL version mapping
+## Published version
 
-GitHub release `v1.0.0` identifies the code and examples. The local EOTDL snapshot additionally contains all ten inference-only checkpoints. `release-manifest.json` records its source commit, release tag, and per-file hashes.
-
-The EOTDL version is **pending upload**. Its number must be read from EOTDL after publication, then explicitly linked to GitHub `v1.0.0`. Do not assume that it is assigned automatically from the Git tag.
+GitHub release `v1.0.0` (commit `fa746faefbf6fa9a26339b3fa28c2b8fa7b56752`) corresponds to EOTDL model version **1** (ID `6af713a1dbc0af5e134f7df9`), uploaded on 13 November 2026. The EOTDL catalog checksum of every one of the 105 payload files, and the uploaded `release-manifest.json` itself, were checked against the snapshot built from that commit on 17 November 2026. See `provenance/releases/v1.0.0.json`. Changes on `main` after this tag are not part of the upload; a new upload creates a new EOTDL version.
 
 ## Rebuild the snapshot
 
@@ -42,11 +40,11 @@ After upload, verify the public [model page](https://www.eotdl.com/models/sentin
 
 ## Download after publication
 
-In an environment with the EOTDL client, replace `VERSION_FROM_EOTDL` with the actual published integer:
+In an environment with the EOTDL client, version 1 is the published release:
 
 ```bash
 eotdl auth login
-eotdl models get sentinel-biomass-inference --version VERSION_FROM_EOTDL --path ./downloaded-model
+eotdl models get sentinel-biomass-inference --version 1 --path ./downloaded-model
 ```
 
 Use the resulting snapshot's code and its `checkpoints/` folder together. Verify checkpoint hashes before running inference. For EOTDL client versions whose download command fails, the model page is the alternative entry point; do not silently substitute a different model version.
