@@ -1,0 +1,5 @@
+-r requirements.txt
+# Training and BioMassters evaluation (training/); versions of the original runs where they matter
+lightning==2.6.1
+scikit-image==0.26.0
+pandas==2.3.3

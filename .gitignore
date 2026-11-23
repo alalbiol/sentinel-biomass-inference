@@ -9,3 +9,5 @@ downloads/
 *.ckpt
 *.safetensors
 *.part
+runs/
+data/

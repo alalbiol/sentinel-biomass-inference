@@ -1,4 +1,4 @@
-# AI4DIS Sentinel biomass model card — v1.0.0
+# AI4DIS Sentinel biomass model card — v1.1.0
 
 ## Task and scope
 
@@ -13,7 +13,21 @@ BioMassters contains forest patches in Finland with LiDAR-calibrated biomass lab
 - [BioMassters dataset and paper](https://nascetti-a.github.io/BioMasster/)
 - [BioMassters dataset card and data licence](https://huggingface.co/datasets/nascetti-a/BioMassters)
 
-This repository does not redistribute the training dataset or include training scripts. The release supports inference and verification against stored predictions. It does not claim independent reproduction of the original model training.
+This repository does not redistribute the training dataset. Since v1.1.0 it includes the training code (`training/`), ported from the original AI4DIS pipeline, and an evaluation script for the BioMassters test set. The released checkpoints are the originals; they were not retrained for this release.
+
+## Training
+
+All ten models were trained the same way. The settings below come from the training state stored in each original checkpoint (`provenance/training.json`):
+- data: 80% of the 8,689 BioMassters training chips (random split, unseeded), with 20% for validation;
+- loss and optimization: pixel-wise MSE on raw inputs, AdamW (learning rate 1e-3, weight decay 0.01), cosine annealing to 1e-6;
+- length and batch: 20 epochs, batch size 3 on one GPU;
+- checkpoint: the last epoch.
+
+The encoders started from timm ImageNet weights. This is inferred from the code history, because the checkpoints do not record it. Late-fusion models train on one randomly chosen available month per chip and step, and average the decoded months at inference.
+
+## Evaluation on BioMassters
+
+On the 2,773 test chips (native 10 m, pixel-pooled), RMSE ranges from 33.30 Mg/ha (EfficientNet-B5, early fusion, R² 0.794) to 42.40 Mg/ha (MobileNetV4, late fusion, R² 0.665). Early fusion beats late fusion for every encoder. All values are in `expected/biomassters_test.json`, and `training/evaluate.py` recomputes them from the checkpoints. These are in-domain results in Finland; they do not establish accuracy elsewhere.
 
 ## Preprocessing and missing observations
 

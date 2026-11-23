@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-23",
+  "original_checkpoints_load_into_training_module": "all ten Lightning checkpoints load with strict=True into training.module.BiomassModule",
+  "released_checkpoints_fit_training_architecture": "tests/test_training.py, all ten safetensors, strict",
+  "biomassters_test_reproduction": {
+    "model": "mobilenetv4_early (released checkpoint)",
+    "device": "NVIDIA RTX 3060, CUDA",
+    "result": {
+      "n_chips": 2773,
+      "n_pixels": 181731328,
+      "rmse": 35.27104085966761,
+      "mae": 19.062104716268294,
+      "r2": 0.768514189141847,
+      "frac_over_pct": 6.332079959268222,
+      "frac_under_pct": 3.972067490752062,
+      "sci": 0.6819597013922664
+    },
+    "expected": "expected/biomassters_test.json",
+    "agreement": "identical to the four reported decimals for RMSE, MAE, R2, SCI, over- and under-estimation"
+  },
+  "train_py_smoke": [
+    "mobilenetv4_late, 32-true, 20 steps on 60 test chips: training, validation, cosine schedule, checkpoint, export, inference load",
+    "efficientnet_early, bf16-mixed, 8 steps"
+  ],
+  "timm_initializations": "all five ImageNet encoders download and load with timm 1.0.25",
+  "gpu_time_per_step_batch3_rtx3060_12gb": {
+    "mobilenetv4_early": {
+      "32-true": {
+        "s_per_step": 0.142,
+        "hours_20_epochs": 1.8,
+        "peak_gb": 3.7
+      }
+    },
+    "mobilenetv4_late": {
+      "32-true": {
+        "s_per_step": 0.122,
+        "hours_20_epochs": 1.6,
+        "peak_gb": 3.3
+      }
+    },
+    "efficientnet_early": {
+      "32-true": "OOM",
+      "bf16-mixed": {
+        "s_per_step": 0.291,
+        "hours_20_epochs": 3.7,
+        "peak_gb": 9.2
+      }
+    },
+    "efficientnet_late": {
+      "32-true": "OOM",
+      "bf16-mixed": {
+        "s_per_step": 0.276,
+        "hours_20_epochs": 3.6,
+        "peak_gb": 8.9
+      }
+    },
+    "efficientnetv2_early": {
+      "32-true": "OOM",
+      "bf16-mixed": {
+        "s_per_step": 0.292,
+        "hours_20_epochs": 3.8,
+        "peak_gb": 8.3
+      }
+    },
+    "efficientnetv2_late": {
+      "32-true": "OOM",
+      "bf16-mixed": {
+        "s_per_step": 0.277,
+        "hours_20_epochs": 3.6,
+        "peak_gb": 7.9
+      }
+    },
+    "resnetrs101_early": {
+      "32-true": {
+        "s_per_step": 0.597,
+        "hours_20_epochs": 7.7,
+        "peak_gb": 11.7
+      }
+    },
+    "resnetrs101_late": {
+      "32-true": {
+        "s_per_step": 0.54,
+        "hours_20_epochs": 7.0,
+        "peak_gb": 10.3
+      }
+    },
+    "convnextv2_early": {
+      "32-true": "OOM",
+      "bf16-mixed": "OOM"
+    },
+    "convnextv2_late": {
+      "32-true": "OOM",
+      "bf16-mixed": "OOM"
+    }
+  },
+  "note": "Timing is GPU compute only (batches preloaded); 20 epochs = 46,340 steps. Full retraining was not run for this release."
+}

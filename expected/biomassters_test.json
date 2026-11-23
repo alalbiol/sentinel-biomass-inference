@@ -1,0 +1,109 @@
+{
+  "description": "Original AI4DIS results on the BioMassters test set (2,773 chips, native 10 m, metrics pooled over all pixels), as printed by the original evaluation. They are Table I of the manuscript accompanying spain-biomass-transfer-igarss (under review). Percentages for frac_over/frac_under. Ensembles average the five encoders of one fusion mode; uncertainty_ratio_pct = mean member standard deviation / mean prediction.",
+  "results": {
+    "convnextv2_early": {
+      "rmse": 34.9862,
+      "mae": 18.7967,
+      "r2": 0.7722,
+      "n_chips": 2773,
+      "sci": 0.6715,
+      "frac_over_pct": 5.9596,
+      "frac_under_pct": 4.0963
+    },
+    "efficientnet_early": {
+      "rmse": 33.3002,
+      "mae": 17.7321,
+      "r2": 0.7937,
+      "n_chips": 2773,
+      "sci": 0.7032,
+      "frac_over_pct": 5.3326,
+      "frac_under_pct": 3.5327
+    },
+    "efficientnetv2_early": {
+      "rmse": 34.5174,
+      "mae": 18.2936,
+      "r2": 0.7783,
+      "n_chips": 2773,
+      "sci": 0.6939,
+      "frac_over_pct": 5.2537,
+      "frac_under_pct": 3.9082
+    },
+    "mobilenetv4_early": {
+      "rmse": 35.271,
+      "mae": 19.0621,
+      "r2": 0.7685,
+      "n_chips": 2773,
+      "sci": 0.682,
+      "frac_over_pct": 6.3321,
+      "frac_under_pct": 3.9721
+    },
+    "resnetrs101_early": {
+      "rmse": 33.9808,
+      "mae": 18.139,
+      "r2": 0.7851,
+      "n_chips": 2773,
+      "sci": 0.6944,
+      "frac_over_pct": 5.602,
+      "frac_under_pct": 3.5408
+    },
+    "ensemble_early": {
+      "rmse": 33.5579,
+      "mae": 17.8013,
+      "r2": 0.7905,
+      "n_chips": 2773,
+      "uncertainty_ratio_pct": 10.05
+    },
+    "convnextv2_late": {
+      "rmse": 39.0894,
+      "mae": 22.3316,
+      "r2": 0.7157,
+      "n_chips": 2773,
+      "sci": 0.5885,
+      "frac_over_pct": 10.6715,
+      "frac_under_pct": 3.456
+    },
+    "efficientnet_late": {
+      "rmse": 39.4684,
+      "mae": 22.0306,
+      "r2": 0.7101,
+      "n_chips": 2773,
+      "sci": 0.6126,
+      "frac_over_pct": 9.8397,
+      "frac_under_pct": 3.4967
+    },
+    "efficientnetv2_late": {
+      "rmse": 38.5556,
+      "mae": 21.3213,
+      "r2": 0.7234,
+      "n_chips": 2773,
+      "sci": 0.6228,
+      "frac_over_pct": 8.7658,
+      "frac_under_pct": 3.6722
+    },
+    "mobilenetv4_late": {
+      "rmse": 42.4046,
+      "mae": 23.6478,
+      "r2": 0.6654,
+      "n_chips": 2773,
+      "sci": 0.5827,
+      "frac_over_pct": 9.2419,
+      "frac_under_pct": 4.9869
+    },
+    "resnetrs101_late": {
+      "rmse": 39.793,
+      "mae": 22.1449,
+      "r2": 0.7054,
+      "n_chips": 2773,
+      "sci": 0.6007,
+      "frac_over_pct": 9.1751,
+      "frac_under_pct": 3.6934
+    },
+    "ensemble_late": {
+      "rmse": 39.3067,
+      "mae": 21.8506,
+      "r2": 0.7125,
+      "n_chips": 2773,
+      "uncertainty_ratio_pct": 9.95
+    }
+  }
+}
