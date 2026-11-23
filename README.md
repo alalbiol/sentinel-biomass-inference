@@ -19,10 +19,10 @@ source: https://github.com/alalbiol/sentinel-biomass-inference/tree/v1.1.0
 
 > **The model weights are on EOTDL, not on GitHub.** Get them from the **[EOTDL model `sentinel-biomass-inference`](https://www.eotdl.com/models/sentinel-biomass-inference)** (2.1 GB, ten `.safetensors` files). Each EOTDL version is a complete snapshot: this code plus `checkpoints/`.
 
-| Release | GitHub | EOTDL | Contents |
+| Release | GitHub | EOTDL (latest = default download) | Contents |
 |---|---|---|---|
 | 1.0.0 | [v1.0.0](https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.0.0) | [model version 1](https://www.eotdl.com/models/sentinel-biomass-inference) | Inference, examples, Earth Engine downloader, ten checkpoints |
-| 1.1.0 | [v1.1.0](https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.1.0) | model version 2 (pending upload) | Adds the training and evaluation code, recovered training settings and BioMassters test results. Same checkpoints. |
+| 1.1.0 | [v1.1.0](https://github.com/alalbiol/sentinel-biomass-inference/releases/tag/v1.1.0) | [model version 2](https://www.eotdl.com/models/sentinel-biomass-inference) | Adds the training and evaluation code, recovered training settings and BioMassters test results. Same checkpoints. Verified upload: [release record](provenance/releases/v1.1.0.json) |
 
 The models estimate standing biomass. They do not forecast growth or compute carbon credits, and they were trained in boreal Finland: read [MODEL_CARD.md](MODEL_CARD.md) before using them elsewhere.
 

@@ -5,7 +5,7 @@ The root README has EOTDL metadata. Code and model weights use MIT; sample image
 
 ## Published versions
 
-GitHub release `v1.1.0` adds the training and evaluation code; its snapshot contains the same ten checkpoints and becomes EOTDL model version 2 when uploaded.
+GitHub release `v1.1.0` (commit `4802934a2c6035b51005b1f77dbbfc4b402a4e2a`) corresponds to EOTDL model version **2**, uploaded on 23 November 2026. It adds the training and evaluation code; the ten checkpoints are unchanged. The EOTDL catalog SHA-1 of all 119 payload files and the uploaded `release-manifest.json` were checked against the snapshot built from that commit. See `provenance/releases/v1.1.0.json`.
 
 GitHub release `v1.0.0` (commit `fa746faefbf6fa9a26339b3fa28c2b8fa7b56752`) corresponds to EOTDL model version **1** (ID `6af713a1dbc0af5e134f7df9`), uploaded on 13 November 2026. The EOTDL catalog checksum of every one of the 105 payload files, and the uploaded `release-manifest.json` itself, were checked against the snapshot built from that commit on 17 November 2026. See `provenance/releases/v1.0.0.json`. Changes on `main` after this tag are not part of the upload; a new upload creates a new EOTDL version.
 
